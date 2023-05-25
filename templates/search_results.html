@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Search Results</title>
+</head>
+<body>
+    <h1>Search Results</h1>
+        {% for task in tasks %}
+        <form action="{{ url_for('search.updateTask', task_id=task._id) }}" method="POST">
+            <p><strong>Title:</strong>{{ task.title }}</p>
+            <p><strong>Description:</strong> {{ task.description }}</p>
+            <p><strong>Due Date:</strong>{{ task.due_date }}</p>
+            <p><strong>Status:</strong> {{ task.completed }}</p>
+            <label for="completed">Mark as Complete:</label>
+            <input type="checkbox" id="completed" name="completed" {% if task.completed %}checked{% endif %}>
+            <button type="submit">Update Task</button>
+        </form>
+        {% endfor %}
+</body>
+</html>

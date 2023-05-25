@@ -7,7 +7,7 @@
   <h1>Create Task</h1>
     <!-- An HTML form is used to collect user input -->
     <!-- action specifies where to send the form-data when a form is submitted -->
-  <form id="task" action="/create" method="POST">
+  <form id="createTask" action="/create" method="POST">
     <label for="title">Title:</label>
     <input type="text" id="title" name="title" required>
 
@@ -39,7 +39,7 @@
       {% endfor %}
     </ul>
   {% endif %}
-{% endwith %}
+  {% endwith %}
 
 </body>
 </html>

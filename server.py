@@ -1,7 +1,7 @@
 from flask import Flask
 from db.index import get_database
-from create import create_blueprint
-
+from routes.create import create_blueprint
+from routes.search import search_blueprint
 
 # our Web Server Gateway Interface
 app = Flask(__name__, template_folder='templates')
@@ -13,6 +13,7 @@ port = 7777
 
 
 app.register_blueprint(create_blueprint, url_prefix='/create')
+app.register_blueprint(search_blueprint, url_prefix='/search')
 
 if __name__ == '__main__':
     # get the database
