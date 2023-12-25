@@ -9,7 +9,7 @@ app = Flask(__name__, template_folder='templates')
 # to use sessions in Flask, you need to set a secret key in your application configuration
 # The secret key is used to securely sign the session cookie and protect the sesssion data
 app.secret_key = '123'
-port = 7777
+port = 4000
 
 
 app.register_blueprint(create_blueprint, url_prefix='/create')
