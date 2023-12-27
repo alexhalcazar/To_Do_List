@@ -49,7 +49,7 @@ pip3 install -r requirements.txt
 
 Example **'.env'**
 
-```plaintext
+```text
 MONGODB_URI=mongodb+srv://<username>:<password>@cluster0.mongodb.net/<dbname>?retryWrites=true&w=majority
 ```
 
