@@ -53,7 +53,7 @@ Example **'.env'**
 MONGODB_URI=mongodb+srv://<username>:<password>@cluster0.mongodb.net/<dbname>?retryWrites=true&w=majority
 ```
 
-Users would replace **'<username>'**, **'<password>'**, and **'<dbname>'** with their own MongoDB Atlas credentials.
+Users would replace **<username>**, **<password>**, and **<dbname>** with their own MongoDB Atlas credentials.
 
 **Note:** Be sure to add your newly created **'.env'** to your **'.gitignore'** file.
 
