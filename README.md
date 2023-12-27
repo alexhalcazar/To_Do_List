@@ -1,6 +1,6 @@
 # ToDoList
 
-A ToDoList python application which works with mongoDB and uses the Flask framework.
+A ToDoList python based web application which works with mongoDB and uses the Flask framework.
 
 ## Installation
 
@@ -55,6 +55,8 @@ MONGODB_URI=mongodb+srv://<username>:<password>@cluster0.mongodb.net/<dbname>?re
 
 Users would replace **'<username>'**, **'<password>'**, and **'<dbname>'** with their own MongoDB Atlas credentials.
 
+**Note:** Be sure to add your newly created **'.env'** to your **'.gitignore'** file.
+
 ## Usage
 
 8. Once Flask is installed, you can run the application using the provided **'server.py'** file:
@@ -62,9 +64,21 @@ Users would replace **'<username>'**, **'<password>'**, and **'<dbname>'** with 
 ```bash
 python3 server.py
 ```
-## Acces the ToDoList API endpoints
+## Acces the ToDoList endpoints
 
-TODO
+Currently this ToDoList web application has two endpoints. 
+
+### Search
+
+[A search endpoint used to search created tasks.](http://localhost:4000/search/) 
+
+### Create
+
+[A create endpoint used to create a new task](http://localhost:4000/create/)
+
+## Reporting Issues
+
+If you encounter any issues or have suggestions for improvement, please [create an issue](https://github.com/alexhalcazar/To_Do_List/issues)
 
 ## Authors
 
