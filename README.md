@@ -33,7 +33,7 @@ pip3 install -r requirements.txt
 
 4. Set Up a Cluster:
 
-+ After creating an account, users need to set up a MongoDB Atlas cluster. This involves configuring the cluste's location, cluster tier, and other settings.
++ After creating an account, users need to set up a MongoDB Atlas cluster. This involves configuring the cluster's location, cluster tier, and other settings.
 
 5. Create a Database User:
 
@@ -56,6 +56,16 @@ MONGODB_URI=mongodb+srv://<username>:<password>@cluster0.mongodb.net/<dbname>?re
 Users would replace **\<username\>** **\<password\>** and **\<dbname\>** with their own MongoDB Atlas credentials.
 
 **Note:** Be sure to add your newly created **'.env'** to your **'.gitignore'** file.
+
+## Demo Database (for showcase purposes only)
+
+The application is configured to connect to a MongoDB database hosted on MongoDB Atlas for demonstration purposes.
+
+### MongoDB Connection String:
+
+```javascript
+MONGODB_URI="mongodb+srv://demo-user:123@cluster0.u3oofq6.mongodb.net/?retryWrites=true&w=majority" 
+```
 
 ## Usage
 
